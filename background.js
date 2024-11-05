@@ -1,15 +1,15 @@
 browser.menus.create({
-  id: "reload-pinafore",
-  title: "Reload Pinafore",
-  documentUrlPatterns: ["https://pinafore.social/*"]
+  id: "voyager-sidebar",
+  title: "Voyager in a sidebar",
+  documentUrlPatterns: ["https://vger.app/*"]
 });
 
 function reloadSidebar() {
-  browser.sidebarAction.setPanel({ panel: "https://pinafore.social" });
+  browser.sidebarAction.setPanel({ panel: "https://vger.app" });
 }
 
 browser.menus.onClicked.addListener(function (info, tab) {
-  if (info.menuItemId == "reload-pinafore") {
+  if (info.menuItemId == "voyager-sidebar") {
     browser.sidebarAction.getPanel({}).then(reloadSidebar)
   }
 });
