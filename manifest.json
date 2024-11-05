@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Mastodon as a Sidebar",
-  "description": "Displays a sidebar that lets you talk to your friends using Mastodon.",
-  "version": "2.2",
+  "name": "Voyager as a Sidebar",
+  "description": "Displays a sidebar that lets you browse lemmy instances using Voyager app.",
+  "version": "1.0",
   "applications": {
     "gecko": {
       "strict_min_version": "54.0a1"
@@ -16,14 +16,14 @@
       "suggested_key": {
         "default": "Alt+Shift+M"
       },
-      "description": "Opens and closes Mastodon sidebar"
+      "description": "Opens and closes Voyager sidebar"
     }
   },
   "sidebar_action": {
     "default_icon": {
       "512": "icons/icon512.png"
     },
-    "default_title": "Mastodon",
+    "default_title": "Voyager",
     "default_panel": "index.html"
   },
   "background": {
